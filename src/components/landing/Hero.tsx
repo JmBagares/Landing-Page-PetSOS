@@ -29,7 +29,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center pt-32 pb-20 md:pt-40 md:pb-28 bg-slate-50/50">
+    <section className="relative overflow-hidden pt-32 pb-20 lg:pt-0 lg:pb-0 lg:min-h-screen lg:flex lg:items-center bg-slate-50/50">
       {/* ── DotGrid interactive background ── */}
       {/* Opacity increased, removed opaque gradients, set z-index to stay under text but visible */}
       <div className="absolute inset-0 z-0 opacity-60 pointer-events-auto">
@@ -68,7 +68,7 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <motion.h1 variants={itemVariants} className="mt-7 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight text-slate-900 drop-shadow-sm">
+          <motion.h1 variants={itemVariants} className="mt-7 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight text-slate-900 drop-shadow-sm">
             Report. Rescue.
             <br />
             <span className="text-blue-600">Reunite.</span>
@@ -141,24 +141,24 @@ export function Hero() {
             />
             {/* Floating card - AI Priority */}
             <motion.div 
-              className="absolute -left-6 top-24 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 px-4 py-3 shadow-xl"
+              className="absolute -left-2 sm:-left-6 top-16 sm:top-24 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 px-3 sm:px-4 py-2 sm:py-3 shadow-xl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.2, type: "spring" }}
             >
               <p className="text-[10px] uppercase tracking-wider text-blue-600 font-extrabold">AI Priority</p>
-              <p className="text-sm font-bold text-slate-900">Urgency assessed</p>
+              <p className="text-xs sm:text-sm font-bold text-slate-900">Urgency assessed</p>
             </motion.div>
 
             {/* Floating card - GPS Tagged */}
             <motion.div 
-              className="absolute -right-4 bottom-32 rounded-xl bg-slate-900/95 backdrop-blur-md text-white px-4 py-3 shadow-xl"
+              className="absolute -right-2 sm:-right-4 bottom-24 sm:bottom-32 rounded-xl bg-slate-900/95 backdrop-blur-md text-white px-3 sm:px-4 py-2 sm:py-3 shadow-xl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.5, type: "spring" }}
             >
               <p className="text-[10px] uppercase tracking-wider text-emerald-400 font-extrabold">GPS Tagged</p>
-              <p className="text-sm font-bold">Location pinned</p>
+              <p className="text-xs sm:text-sm font-bold">Location pinned</p>
             </motion.div>
           </motion.div>
         </motion.div>
