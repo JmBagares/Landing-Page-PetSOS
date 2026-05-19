@@ -62,7 +62,7 @@ export function Community() {
           <p className="mt-5 text-lg text-slate-600">
             Volunteers are the backbone of PetSOS. When a report is submitted,
             nearby volunteers receive push notifications and can accept rescue
-            assignments — updating progress until the animal is safe.
+            assignments — updating progress until the animal is safe. To join as a volunteer, download the PetSOS app and register there.
           </p>
 
           <ul className="mt-8 space-y-3">
@@ -80,18 +80,6 @@ export function Community() {
               </motion.li>
             ))}
           </ul>
-
-          <motion.a
-            href="#volunteer"
-            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-7 py-3.5 text-base font-semibold text-white transition-all hover:bg-blue-600 hover:translate-y-[-2px] hover:shadow-lg hover:shadow-blue-600/25"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
-          >
-            Register as Volunteer
-            <ArrowRight className="h-4 w-4" />
-          </motion.a>
         </motion.div>
       </div>
     </section>

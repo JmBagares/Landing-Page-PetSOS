@@ -1,4 +1,4 @@
-import { ArrowRight, HeartHandshake, Siren, PawPrint } from "lucide-react";
+import { ArrowRight, Siren, PawPrint } from "lucide-react";
 import DotGrid from "@/components/ui/DotGrid";
 import phoneMockup from "@/assets/phone-mockup.png";
 import { motion, Variants } from "framer-motion";
@@ -82,19 +82,12 @@ export function Hero() {
 
           <motion.div variants={itemVariants} className="mt-9 flex flex-wrap gap-3">
             <a
-              href="#community"
-              className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-700 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-blue-600/30"
-            >
-              <HeartHandshake className="h-5 w-5" />
-              Join as Volunteer
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
-            <a
               href="#download"
-              className="group inline-flex items-center gap-2 rounded-xl border-2 border-slate-900 bg-white/80 backdrop-blur-sm px-6 py-3.5 text-base font-semibold text-slate-900 shadow-sm transition-all hover:bg-slate-900 hover:text-white"
+              className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-700 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-blue-600/30"
             >
               <Siren className="h-5 w-5" />
               Download the App
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </motion.div>
 
